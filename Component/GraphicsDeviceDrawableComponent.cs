@@ -44,6 +44,11 @@ namespace Valekhz.Components
             get { return _graphicsDeviceService.GraphicsDevice; }
         }
 
+        public IServiceProvider ServiceProvider
+        {
+            get { return _serviceProvider; }
+        }
+
         #endregion
 
         #region Constructors

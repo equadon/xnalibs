@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -59,8 +60,8 @@ namespace Valekhz.ScreenManagement
         /// <summary>
         /// Constructs a new screen manager component.
         /// </summary>
-        public ScreenManager(IGraphicsDeviceService graphicsDeviceService)
-            : base(graphicsDeviceService)
+        public ScreenManager(IServiceProvider serviceProvider)
+            : base(serviceProvider)
         {
             IsInitialized = false;
         }
