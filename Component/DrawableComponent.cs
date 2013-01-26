@@ -1,7 +1,7 @@
 using System;
 using Microsoft.Xna.Framework;
 
-namespace ValekhzLibs.Components
+namespace Valekhz.Components
 {
     /// <summary>
     ///   Lightweight variant DrawableGameComponent that doesn't reference the Game class

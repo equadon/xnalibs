@@ -1,7 +1,7 @@
 using System;
 using Microsoft.Xna.Framework;
 
-namespace ValekhzLibs.Components
+namespace Valekhz.Components
 {
     /// <summary>
     ///   Variant of the XNA GameComponent that doesn't reference the Game class

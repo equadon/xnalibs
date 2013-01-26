@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 
-namespace ValekhzLib
+namespace Valekhz.ScreenManager
 {
     /// <summary>
     /// Defines an action that is designated by some set of buttons and/or keys.

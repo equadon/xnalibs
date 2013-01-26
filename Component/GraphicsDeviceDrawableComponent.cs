@@ -1,7 +1,7 @@
 using System;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace ValekhzLibs.Components
+namespace Valekhz.Components
 {
 
     /// <summary>

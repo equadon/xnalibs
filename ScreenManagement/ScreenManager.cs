@@ -3,9 +3,9 @@ using System.Diagnostics;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-using ValekhzLibs.Components;
+using Valekhz.Components;
 
-namespace ValekhzLib
+namespace Valekhz.ScreenManager
 {
     /// <summary>
     /// The screen manager is a component which manages one or more GameScreen

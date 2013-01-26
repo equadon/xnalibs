@@ -2,7 +2,7 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input.Touch;
 
-namespace ValekhzLib
+namespace Valekhz.ScreenManager
 {
     /// <summary>
     /// Enum describes the screen transition state.
