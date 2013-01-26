@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Valekhz.ScreenManager
+namespace Valekhz.ScreenManagement
 {
     /// <summary>
     /// Defines an object that can create a screen when given its type.

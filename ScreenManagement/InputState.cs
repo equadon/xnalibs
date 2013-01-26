@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 
-namespace Valekhz.ScreenManager
+namespace Valekhz.ScreenManagement
 {
     /// <summary>
     /// Helper for reading input from keyboard, gamepad, and touch input. This class 
