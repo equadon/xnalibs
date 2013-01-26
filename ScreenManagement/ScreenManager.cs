@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 
 using Valekhz.Components;
@@ -36,15 +37,21 @@ namespace Valekhz.ScreenManagement
         public SpriteBatch SpriteBatch { get; private set; }
 
         /// <summary>
+        /// A default ContentManager shared by all the screens. This saves
+        /// each screen having to bother creating their own local instance.
+        /// </summary>
+        public ContentManager Content { get; private set; }
+
+        /// <summary>
         /// A default font shared by all the screens. This saves
         /// each screen having to bother loading their own local copy.
         /// </summary>
-        public SpriteFont Font { get; private set; }
+        public SpriteFont Font { get; protected set; }
 
         /// <summary>
         /// Gets a blank texture that can be used by the screens.
         /// </summary>
-        public Texture2D BlankTexture { get; private set; }
+        public Texture2D BlankTexture { get; protected set; }
 
         /// <summary>
         /// If true, the manager prints out a list of all the screens
@@ -64,6 +71,8 @@ namespace Valekhz.ScreenManagement
             : base(serviceProvider)
         {
             IsInitialized = false;
+
+            Content = new ContentManager(serviceProvider, "Content");
         }
 
         #region Initialization
@@ -84,8 +93,6 @@ namespace Valekhz.ScreenManagement
         protected override void LoadContent()
         {
             SpriteBatch = new SpriteBatch(GraphicsDevice);
-            Font = null;
-            BlankTexture = null;
 
             foreach (GameScreen screen in _screens)
             {
